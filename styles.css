@@ -3,9 +3,6 @@ body {
     font-family: Lato;
 }
 /* FONT */
-.logo {
-    text-align: center;
-}
 h1 {
     font-family: Dosis ;
     font-size: 3rem;
@@ -13,28 +10,30 @@ h1 {
     color: #fe608c;
 }
 .subtitle {
-    font-family: Roboto ;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color:#f77cab;
     margin: -.5em 0;
 }
-/* NAVIGATION */
+/* LAYOUT */
 .container {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;  
+}
+.container-flex{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 header {
     background-color: #eeeeee;
     padding: 2em 0;
+    text-align: center;
 }
+
+/* NAVIGATION */
 nav ul{
     display: flex;
     list-style: none;
-    padding: 0;
-    
+    padding: 0;  
 }
 nav li{
     margin-left: 1.5em;
@@ -44,4 +43,9 @@ nav a{
     font-size: 1rem;
     font-weight: 600;
     color: #f77cab;
+}
+@media (max-width: 675px){
+    .container-flex{
+        flex-direction: column;
+    }
 }

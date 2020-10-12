@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Lato;
+}
+/* FONT */
+.logo {
+    text-align: center;
+}
+h1 {
+    font-family: Dosis ;
+    font-size: 3rem;
+    margin:0;
+    color: #fe608c;
+}
+.subtitle {
+    font-family: Roboto ;
+    font-size: 1.5rem;
+    color:#f77cab;
+    margin: 0;
+}
+/* NAVIGATION */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    background-color: antiquewhite;
+    display: flex;
+}
+li{
+    margin-left: 1em;
+    font-size: 1.5rem;
+    color: #f77cab;
+}

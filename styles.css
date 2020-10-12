@@ -16,21 +16,32 @@ h1 {
     font-family: Roboto ;
     font-size: 1.5rem;
     color:#f77cab;
-    margin: 0;
+    margin: -.5em 0;
 }
 /* NAVIGATION */
 .container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
-ul{
+header {
+    background-color: #eeeeee;
+    padding: 2em 0;
+}
+nav ul{
+    display: flex;
     list-style: none;
     padding: 0;
-    background-color: antiquewhite;
-    display: flex;
+    
 }
-li{
-    margin-left: 1em;
-    font-size: 1.5rem;
+nav li{
+    margin-left: 1.5em;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
     color: #f77cab;
 }

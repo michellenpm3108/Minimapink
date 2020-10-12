@@ -1,15 +1,27 @@
 body {
     margin: 0;
     font-family: Lato;
+    font-weight: 300;
 }
 /* IMAGE */
 img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+    width: 100%;  
     display: block;
 }
-
+.article-image {
+    max-height: 200px;
+    object-fit: cover;
+}
+.event-photo {
+    max-height: 150px;
+    object-fit: cover;
+}
+.about-us-photo {
+    max-height: 300px;
+    max-width: 200px;
+    object-fit:cover;
+    margin: auto;
+}
 /* FONT */
 h1 {
     font-family: Dosis ;
@@ -86,6 +98,41 @@ aside{
 .article-recent-secondary{
     width: 35%;
     order: -1;
+}
+/* WIDGET*/
+.about-us,
+.events {
+    background-color: #fad1e0;
+    padding: 1em;
+}
+.event{
+    margin: 1.5em 0;
+}
+.about-us {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.widget-title {
+    color: #fe608c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.event-time,
+.event-price, 
+.event-title,
+.event-place {
+    color: #808080;
+    margin: .25em 0;
+}
+.event-title {
+    color: #fe608c;
+    font-weight: 700;
+}
+
+.event-time{
+    color: #4d4d4d;
+    font-weight: 700;
 }
 /* NAVIGATION */
 nav ul{

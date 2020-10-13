@@ -39,22 +39,23 @@ h1 {
 }
 .article-info{
     color: #808080;
-    font-size: 1rem;
+    font-size: .75rem;
 }
 .article-title {
     color: #fe608c;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: .5em;
 }
 .article-body {
     font-family: roboto;
     color: #4d4d4d;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .article-read-more{
     color: #f77cab;
     text-decoration: none;
+    font-size: .75rem;
 }
 .article-read-more:focus,
 .article-read-more:hover{
@@ -69,35 +70,49 @@ h1 {
 .container-flex{
     display: flex;
     justify-content: space-between; 
+    flex-direction: column;
 }
 header {
     padding: 4em 0;
-    text-align: center;
 }
-main {
-    width: 65%;
-}
-aside{
-    width: 30%;
-}
+
 .article-featured {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 1em;
 }
+
 .article-image {
     order: -1;
+    margin-bottom: 1em;
 }
 .article-recent {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2em;
+    margin: 1em 0;
 }
-.article-recent-main {
-    width: 60%;
-}
-.article-recent-secondary{
-    width: 35%;
-    order: -1;
+
+/* BIG SCREEN */
+@media (min-width: 675px){
+    .container-flex{
+        flex-direction: row;
+    }
+    main {
+        width: 65%;
+    }
+    aside{
+        width: 30%;
+    }
+    .article-recent {
+        display: flex;
+        justify-content: space-between;
+    }
+    .article-recent-main {
+        width: 60%;
+    }
+    .article-recent-secondary{
+        width: 35%;
+        order: -1;
+    }
 }
 /* WIDGET*/
 .about-us,
@@ -148,7 +163,7 @@ nav a{
     font-size: 1rem;
     font-weight: 600;
     color: #4d4d4d;
-    padding: .5rem;
+    padding: .25rem;
 }
 nav a:focus,
 nav a:hover{
@@ -157,18 +172,4 @@ nav a:hover{
 .current-page{
     color:  #fe608c;
     border-bottom: #fe608c 1px solid;
-}
-
-/* BIG SCREEN */
-@media (max-width: 675px){
-    .container-flex{
-        flex-direction: column;
-    }
-    nav ul{
-        flex-direction: column;
-        text-align: center;
-    }
-    .article-recent {
-        flex-direction: column;
-    }
 }

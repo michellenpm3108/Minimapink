@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Lato;
     font-weight: 300;
+    line-height: 1.5;
 }
 /* IMAGE */
 img {
@@ -57,6 +58,7 @@ h1 {
     color: #f77cab;
     text-decoration: none;
     font-size: .75rem;
+    letter-spacing: 2px; 
 }
 .article-read-more:focus,
 .article-read-more:hover{
@@ -127,6 +129,8 @@ nav li {
 }
 nav a{
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     font-size: 1rem;
     font-weight: 600;
     color: #4d4d4d;
@@ -202,4 +206,26 @@ nav a:hover{
 .event-time{
     color: #4d4d4d;
     font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: #fad1e0;
+    padding: .75em;
+    margin-top: 3em;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    line-height: 1.7;
+}
+.footer-blog-name{
+    margin-bottom: 0;
+    font-family: Dosis ;
+    font-size: 1rem;
+    color: #fe608c;
+}
+.footer-sub {
+    font-size: .75rem;
+    color: rgba(0,0,0,0.5);
 }
